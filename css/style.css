@@ -73,13 +73,24 @@ a {
   padding: 0 3rem;
   width: 50%;
 }
-.about-text-box h3 {
+/* .about-text-box h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-color);
+  font-style: italic;
+} */
+.section-subtitle {
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--text-color);
   font-style: italic;
 }
-.about-text-box h1 {
+/* .about-text-box h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+} */
+.section-title {
   font-size: 3.5rem;
   font-weight: 700;
   color: var(--text-color);
@@ -89,7 +100,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.about-text-box p {
+.section-content {
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -165,6 +176,49 @@ a {
   letter-spacing: 0.1rem;
   margin: 2rem 0;
 }
+/* ---------------------- Service section -------------------- */
+.service-content {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0;
+}
+.service-text-box {
+  width: 50%;
+  padding-right: 5rem;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.service {
+  padding-right: 5rem;
+}
+.service img {
+  width: 50px;
+  height: 50px;
+}
+.service h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+.service p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+.service-video {
+  width: 50%;
+  margin: auto;
+}
+.service-video video {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  margin: auto;
+}
 /* --------- Media Quries ------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -179,17 +233,17 @@ a {
   .about-text-box {
     width: 100%;
   }
-  .about-text-box h3 {
+  .section-subtitle {
     font-size: 1.8rem;
   }
-  .about-text-box h1 {
+  .section-title {
     font-size: 2.5rem;
   }
   .about-button {
     flex-wrap: wrap;
     justify-content: normal;
   }
-  .about-text-box p {
+  .section-content p {
     font-size: 1.6rem;
   }
   .about-image {
@@ -221,8 +275,21 @@ a {
     font-size: 1.2rem;
     line-height: 2rem;
   }
-}
 
+  /* ---------------------- Service section -------------------- */
+  .service-content {
+    flex-direction: column;
+    padding: 0;
+  }
+  .service-text-box {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .service-video {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .btn {
@@ -236,17 +303,17 @@ a {
   .about-text-box {
     width: 50%;
   }
-  .about-text-box h3 {
+  .section-subtitle {
     font-size: 1.8rem;
   }
-  .about-text-box h1 {
+  .section-title {
     font-size: 2rem;
   }
   .about-button {
     flex-wrap: wrap;
     justify-content: normal;
   }
-  .about-text-box p {
+  .section-content {
     font-size: 1.4rem;
   }
   .about-image {
@@ -267,6 +334,19 @@ a {
   .story-content h1 {
     font-size: 2.5rem;
   }
+  /* ---------------------- Service section -------------------- */
+  .service-content {
+    flex-direction: column;
+    padding: 0;
+  }
+  .service-text-box {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .service-video {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -278,17 +358,17 @@ a {
   .about-text-box {
     width: 50%;
   }
-  .about-text-box h3 {
+  .section-subtitle {
     font-size: 2rem;
   }
-  .about-text-box h1 {
+  .section-title {
     font-size: 2.5rem;
   }
   .about-button {
     flex-wrap: wrap;
     justify-content: normal;
   }
-  .about-text-box p {
+  .section-content {
     font-size: 1.4rem;
     line-height: 2rem;
   }
@@ -306,6 +386,17 @@ a {
   /* ------------------- Story Section -------------- */
   .story-content {
     padding: 5rem;
+  }
+  /* ---------------------- Service section -------------------- */
+  .service-content {
+    flex-direction: row;
+  }
+  .service-text-box {
+    width: 50%;
+    padding-right: 5rem;
+  }
+  .service-video {
+    width: 50%;
   }
 }
 
